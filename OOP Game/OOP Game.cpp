@@ -10,12 +10,12 @@ int main()
     Dog dog = Dog("Fido");
 	Animal cat = Animal("Princess", "A naughty girl");
 
-	cat.linked_animals["house mate"] = dog;
-    dog.linked_animals["house mate"] = cat;
+	cat.linked_animals["house mate"] = &dog;
+    dog.linked_animals["house mate"] = &cat;
     std::cout << dog.getName() + "\n";
     std::cout << dog.getDescription() + "\n";
     std::cout << 
-        dog.linked_animals["house mate"].linked_animals["house mate"].getName() + 
+        dog.linked_animals["house mate"]->linked_animals["house mate"]->getName() + 
         " is the housemate of the housemate\n";
 }
 

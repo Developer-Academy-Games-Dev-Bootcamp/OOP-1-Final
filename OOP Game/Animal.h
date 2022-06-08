@@ -16,7 +16,7 @@ public:
 	void setName(std::string name);
 	void setDescription(std::string description);
 	void setLegs(int legs);
-	std::map<std::string, Animal> linked_animals = {};
+	std::map<std::string, Animal*> linked_animals = {};
 private:
 	std::string name_;
 	std::string description_;
