@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/OOP Game/x64/Debug
+/.vs/OOP Game/v17
+/x64/Debug
